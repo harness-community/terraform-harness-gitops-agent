@@ -1,0 +1,27 @@
+# Terraform / OpenTofu local providers and module lock files
+.terraform/
+.terraform.lock.hcl
+
+# State and saved plans can contain secrets
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# Local inputs; *.tfvars.example and *.tfvars.json.example remain trackable
+*.tfvars
+*.tfvars.json
+
+# Local overrides and CLI configuration
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+.tofurc
+tofu.rc
+
+# Crash logs and macOS metadata
+crash.log
+crash.*.log
+.DS_Store
