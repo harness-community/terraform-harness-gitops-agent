@@ -17,7 +17,7 @@ This example creates an organization-scoped agent and its managed runtime. Confi
 
 ~~~hcl
 module "gitops_agent" {
-  source = "git::https://github.com/harness-landing-zone/module-gitops-agent.git?ref=v0.1.0"
+  source = "git::https://github.com/harness-community/module-harness-gitops-agent.git?ref=v0.1.0"
 
   agent = {
     account_id = var.harness_account_id
